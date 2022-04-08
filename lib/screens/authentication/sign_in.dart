@@ -1,6 +1,7 @@
 // ignore_for_file: avoid_print
 
 import 'package:flutter/material.dart';
+import 'package:x_book_app/screens/viewAllBooks.dart';
 import 'package:x_book_app/services/auth.dart';
 import 'package:x_book_app/shared/constants.dart';
 import '../view_seller_books/ViewSellerBooks.dart';
@@ -102,5 +103,5 @@ class _SignInState extends State<SignIn> {
   }
 }
 void _navigateToViewAllBookScreen(context){
-  Navigator.of(context).push(MaterialPageRoute(builder: (context) => ViewSellerBooks()));
+  Navigator.of(context).push(MaterialPageRoute(builder: (context) => const CloudFirestoreSearch()));
 }

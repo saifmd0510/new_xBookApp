@@ -220,7 +220,7 @@ class _MyCustomFormState extends State<MyCustomForm> {
 
               await books.add({
               'uid': uid,
-              'title': title,
+              'title': title.toLowerCase(),
               'author': author,
               'edition': edition,
               'price': price,
