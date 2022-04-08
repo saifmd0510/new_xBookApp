@@ -18,7 +18,7 @@ class _CloudFirestoreSearchState extends State<CloudFirestoreSearch> {
         title: Card(
           child: TextField(
             decoration: InputDecoration(
-                prefixIcon: Icon(Icons.search), hintText: 'Search... '),
+                prefixIcon: Icon(Icons.search), hintText: 'Search.. '),
             onChanged: (val) {
               setState(() {
                 title = val;
