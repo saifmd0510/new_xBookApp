@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "987765006324",
+    "project_id": "xbookapp-116ec",
+    "storage_bucket": "xbookapp-116ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987765006324:android:1013beae09bf1834be23a1",
+        "android_client_info": {
+          "package_name": "com.example.x_book_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987765006324-7hu5qdun5vsuuvhpgfcubkngs0qms9r2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCt0qM5UDgiQA3Qm0a49U-puOt6YlPdv74"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987765006324-7hu5qdun5vsuuvhpgfcubkngs0qms9r2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
