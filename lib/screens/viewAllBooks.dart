@@ -17,8 +17,9 @@ class _CloudFirestoreSearchState extends State<CloudFirestoreSearch> {
       appBar: AppBar(
         title: Card(
           child: TextField(
+            // ignore: prefer_const_constructors
             decoration: InputDecoration(
-                prefixIcon: Icon(Icons.search), hintText: 'Search.. '),
+                prefixIcon: const Icon(Icons.search), hintText: 'Search.. '),
             onChanged: (val) {
               setState(() {
                 title = val;
@@ -36,27 +37,27 @@ class _CloudFirestoreSearchState extends State<CloudFirestoreSearch> {
             :FirebaseFirestore.instance.collection("books").snapshots(),
         builder: (context, snapshot){
           return (snapshot.connectionState == ConnectionState.waiting)
-              ? Center(child: CircularProgressIndicator())
+              ? const Center(child: CircularProgressIndicator())
               : ListView.builder(
             itemCount: snapshot.data!.docs.length,
             itemBuilder: (context,index){
               DocumentSnapshot data = snapshot.data!.docs[index];
               return Container(
-                padding: EdgeInsets.only(top: 16),
+                padding: const EdgeInsets.only(top: 16),
                 child: Column(
                   children: [
                     ListTile(
                       title: Text(data['title'],
-                          style: TextStyle(
+                          style: const TextStyle(
                               fontSize: 20, fontWeight: FontWeight.bold)),
                
-                      trailing: Icon(
+                      trailing: const Icon(
                         Icons.shopping_basket,
                         color: Colors.red,
                         size: 60,
                       ),
                     ),
-                    Divider(
+                    const Divider(
                       thickness: 2,
                     )
                   ],
