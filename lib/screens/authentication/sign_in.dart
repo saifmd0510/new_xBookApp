@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:x_book_app/screens/viewAllBooks.dart';
 import 'package:x_book_app/services/auth.dart';
 import 'package:x_book_app/shared/constants.dart';
-import '../view_seller_books/ViewSellerBooks.dart';
 
 
 class SignIn extends StatefulWidget {
