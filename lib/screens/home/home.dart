@@ -33,12 +33,12 @@ class Home extends StatelessWidget {
               await _auth.signOut();
             },
           ),
-          ElevatedButton(
-            child: Text('Sell Book'),
-            onPressed: () {
-              _navigateToSellBookScreen(context);
-            },
-          ),
+          // ElevatedButton(
+          //   child: Text('Sell Book'),
+          //   onPressed: () {
+          //     _navigateToSellBookScreen(context);
+          //   },
+          // ),
         ],
       ),
       body: Column(
@@ -46,6 +46,22 @@ class Home extends StatelessWidget {
           Container(
             padding: EdgeInsets.all(20.0),
               child: Text(user!.email!, style: const TextStyle(fontSize: 20),)
+          ),
+          Container(
+
+            color: Colors.red,
+            child: SizedBox(height: 50,
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  textStyle: const TextStyle(fontSize: 20),
+                  primary: Colors.black,
+                ),
+                onPressed: () {
+                  _navigateToSellBookScreen(context);
+                },
+                child: const Text('Click to sell your books'),
+              ),
+            ),
           ),
           Container(
 

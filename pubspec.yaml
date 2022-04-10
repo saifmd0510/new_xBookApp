@@ -40,6 +40,8 @@ dependencies:
   provider: ^6.0.2
 
   speech_to_text: ^5.4.3
+  # add this line to your dependencies
+  fluttertoast: ^8.0.9
 
 dev_dependencies:
   flutter_test:
